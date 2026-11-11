@@ -1,0 +1,121 @@
+body {
+    background-color: #072746;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: whitesmoke;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    margin: 0;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar {
+    position: relative;
+    padding: 15px 20px;
+    background: rgba(4, 18, 31, 0.8);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.navlinks a {
+    color: whitesmoke;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.5s;
+    font-size: 1.2rem;
+}
+
+.navlinks a:hover {
+    color: white;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan, 0 0 40px cyan;
+}
+
+.texts h1 {
+    font-weight: bold;
+    font-size: 3.7rem;
+    line-height: 1.05;
+}
+
+h1 , .texts h1{
+    font-family: 'Cinzel', serif;
+}
+
+h1{
+    font-size: 2.8rem;
+    line-height: 1.05;
+}
+
+p{
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin: auto;
+}
+
+.s-part {
+    text-align: center;
+}
+
+.s-part p {
+    margin: 20px 0;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: nowrap;
+}
+
+.images img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.app-image {
+    width: 500px;
+}
+
+.d-button {
+    width: 350px;
+}
+
+/* Hover on the link so it doesn't fight the float */
+.images a {
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.images a:hover {
+    transform: scale(1.08);
+}
+
+/* Floating animation */
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-15px); }
+}
+
+.d-button,
+.app-image {
+    animation: float 4s ease-in-out infinite;
+}
+
+.app-image {
+    animation-delay: 0.8s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .d-button,
+    .app-image {
+        animation: none;
+    }
+}

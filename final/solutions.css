@@ -1,0 +1,93 @@
+body {
+    background-color: #072746;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    color: whitesmoke;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    margin: 0;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar {
+    position: relative;
+    padding: 15px 20px;
+    background: rgba(4, 18, 31, 0.8);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+.navlinks a {
+    color: whitesmoke;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.5s;
+    font-size: 1.2rem;
+}
+
+.navlinks a:hover {
+    color: white;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan, 0 0 30px cyan, 0 0 40px cyan;
+}
+
+
+.texts h1 {
+    font-weight: bold;
+    font-size: 3.7rem;
+    line-height: 1.05;
+}
+
+h1 , .texts h1{
+    font-family: 'Cinzel', serif;
+}
+
+h1{
+    font-size: 2.8rem;
+    line-height: 1.05;
+}
+
+.grid2 {
+    display: grid;
+    gap: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: none;
+    margin: 0 ;
+    padding: 30px 5vw;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    background-color: #0a437c;
+    border-radius: 20px;
+    padding: 20px;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cards img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.texts p,.texts h1{
+    display: flex;
+    justify-content: center;
+}
+p{
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+h2{
+    line-height: 1.5;
+}
